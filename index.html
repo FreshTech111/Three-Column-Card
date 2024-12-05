@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .Heart {
+        background-color: hsl(31, 77%, 52%);
+        height: 50vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 8px;
+        gap: 30;
+        color: white;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .Heart button {
+        padding: 10px;
+        border-radius: 25px;
+        width: 8vw;
+        border: none;
+        color: hsl(31, 77%, 52%);
+    }
+
+    .Heart p {
+        line-height: 30px;
+        color: white;
+    }
+
+    .Soul {
+        background-color: hsl(184, 100%, 22%);
+        height: 50vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 8px;
+        gap: 30;
+        color: white;
+    }
+
+    .Soul button {
+        padding: 10px;
+        border-radius: 25px;
+        width: 8vw;
+        border: none;
+        color: hsl(184, 100%, 22%);
+    }
+
+    .Soul p {
+        line-height: 30px;
+        color: white;
+    }
+
+    .Kidney {
+        background-color: hsl(179, 100%, 13%);
+        height: 50vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 8px;
+        gap: 30;
+        color: white;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .Kidney button {
+        padding: 10px;
+        border-radius: 25px;
+        width: 8vw;
+        border: none;
+        color: hsl(179, 100%, 13%);
+    }
+
+    .Kidney p {
+        line-height: 30px;
+        color: white;
+    }
+
+    .Bull {
+        display: flex;
+    }
+
+    @media (max-width:760px) {
+        .Bull {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .Heart, .Kidney, .Soul{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 40px;
+            width: 100%;
+        }
+        .Heart button,.Kidney button,.Soul button{
+            width: 30vw;
+        }
+    }
+</style>
+
+<body>
+    <main class="main">
+        <div class="Bull">
+            <div class="Heart">
+                <img src="../images/icon-sedans.svg" alt="">
+                <h3>SEDANS</h3>
+                <p>Choose a sedan for its <br> affordability and excellent <br> fuel economy. Ideal for <br> cruising in
+                    the city or on <br> your next road trip.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="Soul">
+                <img src="../images/icon-suvs.svg" alt="">
+                <h3>SUVS</h3>
+                <p>Take an SUV for its spacious <br> interior, power, and <br> versatility. Perfect for your next family
+                    vacation and <br> off-road adventures.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="Kidney">
+                <img src="../images/icon-luxury.svg" alt="">
+                <h3>LUXURY</h3>
+                <p>Cruise in the best car brands <br> without the bloated prices. <br> Enjoy the enhanced comfort <br>
+                    of a luxury rental and arrive <br> in style.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
